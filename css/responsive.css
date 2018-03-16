@@ -1,0 +1,79 @@
+@media(min-width:320px) {}
+
+@media(min-width:576px) {}
+
+@media(min-width:768px) {}
+
+@media(min-width:992px) {
+    main {
+        padding-top: 40px;
+    }
+    footer {
+        height: 80px;
+    }
+    /* MENU*/
+    header {
+        width: 100%;
+        background: #f4426e;
+        height: 41px;
+        z-index: 5;
+        position: fixed;
+        border-bottom: 1px solid black;
+        left: 0;
+    }
+    .menu {
+        font-size: 0px;
+        height: 100%;
+    }
+    .menu li a {
+        display: inline-block;
+        height: 40px;
+        font-size: 22px;
+        transition: 0.4s linear;
+    }
+    .menu li:hover a {
+        color: #f4426e;
+    }
+    .menu li {
+        width: 100px;
+        float: left;
+        border-bottom: 0.5px solid black;
+        background: #f4426e;
+        text-align: center;
+        border-right: 0.02px solid black;
+    }
+    .menu li:hover {
+        background: black;
+    }
+    /* RIGHT MENU*/
+    .Rmenu {
+        font-size: 0px;
+    }
+    .Rmenu li a {
+        display: inline-block;
+        padding: 10px 10px;
+        font-size: 16px;
+        transition: 0.4s linear;
+    }
+    .Rmenu li:hover a {
+        color: #f4426e;
+    }
+    .Rmenu li {
+        width: 100px;
+        float: right;
+        border: 0.5px solid black;
+        border-radius: 25px;
+        background: #f4426e;
+        text-align: center;
+        margin-right: 5px;
+        padding: 0;
+    }
+    .Rmenu li:hover {
+        background: black;
+    }
+    .menu-trigger {
+        display: none;
+    }
+}
+
+@media(min-width:1200px) {}

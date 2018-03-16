@@ -1,0 +1,152 @@
+img {
+    width: 100%;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.inactive {
+    overflow: hidden;
+}
+
+.active {
+    left: 0px;
+}
+
+
+/************* MENU ***************/
+
+header {
+    width: 100%;
+    height: 100%;
+    background: #f4426e;
+    z-index: 5;
+    position: fixed;
+    left: -105%;
+}
+
+.menu {
+    font-size: 0px;
+    width: 100%;
+}
+
+.menu li a {
+    display: block;
+    height: 40px;
+    font-size: 22px;
+    transition: 0.4s linear;
+}
+
+.menu li:hover a {
+    color: #f4426e;
+}
+
+.menu li {
+    display: block;
+    border-bottom: 0.5px solid black;
+    background: #f4426e;
+    text-align: center;
+}
+
+.menu li:hover {
+    background: black;
+}
+
+
+/* RIGHT MENU*/
+
+.Rmenu li a {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+    transition: 0.4s linear;
+}
+
+.Rmenu li:hover a {
+    color: #f4426e;
+}
+
+.Rmenu li {
+    width: 80%;
+    margin: auto;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    background: #f4426e;
+    padding: 5px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.Rmenu li:hover {
+    background: black;
+}
+
+
+/********** MAIN **********/
+
+.menu-trigger {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #f4426e;
+}
+
+.menu-trigger span {
+    display: block;
+    margin: auto;
+    background: black;
+    width: 25px;
+    height: 4px;
+    margin-top: 6px;
+}
+
+
+/*********** FOOTER *************/
+
+footer {
+    width: 100%;
+    background: #f4426e;
+    height: 140px;
+    border-top: 1px solid black;
+    padding: 20px;
+}
+
+footer a.visitus {
+    font-size: 24px;
+}
+
+footer a.visitus:hover {
+    border-bottom: 1px solid black;
+}
+
+.social a {
+    padding-top: 7px;
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.social a:hover {
+    transform: rotateX(360deg);
+}
+
+main {
+    height: 1200px;
+}
+
+.ls {
+    padding-bottom: 20px;
+}
+
+.rs {
+    text-align: center;
+}
