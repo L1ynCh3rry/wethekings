@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('body').addClass('inactive');
     });
 
-    $('.header').click(function() {
+    $('.closebtn').click(function() {
         $('.header').fadeOut();
         $('.header').removeClass('active');
         $('body').removeClass('inactive');

@@ -37,26 +37,16 @@
               <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
               <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
             <![endif]-->
-    <style>
-        .mySlides {
-            display: none
-        }
-        
-        .w3-left,
-        .w3-right,
-        .w3-badge {
-            cursor: pointer
-        }
-        
-        .w3-badge {
-            height: 13px;
-            width: 13px;
-            padding: 0
-        }
-    </style>
 </head>
 
 <body>
+
+    <div class="menu-trigger" style="cursor: pointer;">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
 
     <!---------- HEADER START ---------->
     <header class="header">
@@ -107,64 +97,47 @@
         <div class="row">
             <div class="col-12 col-lg-9" style="background: #b5db0a;">
                 <!-- Button Trigger for menu on smartphones -->
-                <div class="menu-trigger" style="cursor: pointer;">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+
                 <!-- ROW NUMBER 1 -->
-                <div class="row bottom-line">
-                    <div class="col-12 col-lg-3">
-                        <figure class="mainfigure my-3">
-                            <img src="img/main.jpg" alt="Dogs picture">
-                        </figure>
+                <div class="row no-gutters p-5 justify-content-between">
+                    <div class="col-12 col-lg-5 pr-4" style="border-right: 2px solid black;">
+                        <h2>Terms and Conditions and Privacy Policy</h2>
+                        <p>BY CLICKING “I ACCEPT” OR OTHERWISE ACCESSING OR USING ANY OF THE SERVICES (INCLUDING THE LICENSES, PUBLIC DOMAIN TOOLS, AND CHOOSERS), YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREED TO BE BOUND BY THE TERMS. By clicking
+                            “I ACCEPT” or otherwise accessing or using any Services you also represent that you have the legal authority to accept the Terms on behalf of yourself and any party you represent in connection with your use of any Services.
+                            If you do not agree to the Terms, you are not authorized to use any Services. If you are an individual who is entering into these Terms on behalf of an entity, you represent and warrant that you have the power to bind that
+                            entity, and you hereby agree on that entity’s behalf to be bound by these Terms, with the terms “you,” and “your” applying to you, that entity, and other users accessing the Services on behalf of that entity.</p>
                     </div>
-                    <div class="col-12 col-lg-9">
-                        <h1>Dogs</h1>
-                        <p>
-                            The domestic dog (Canis lupus familiaris or Canis familiaris) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant gray wolf are sister taxa as
-                            modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated and has been selectively bred
-                            over millennia for various behaviors, sensory capabilities, and physical attributes.
-                        </p>
-                    </div>
-                </div>
-                <!-- ROW NUMBER 2 -->
-                <div class="row bottom-line">
-                    <div class="col-12 col-lg-9">
-                        <h2>Etymology</h2>
-                        <p>The term "domestic dog" is generally used for both domesticated and feral varieties. The English word dog comes from Middle English dogge, from Old English docga, a "powerful dog breed". The term may possibly derive from Proto-Germanic
-                            *dukkōn, represented in Old English finger-docce ("finger-muscle"). The word also shows the familiar petname diminutive -ga also seen in frogga "frog", picga "pig", stagga "stag", wicga "beetle, worm", among others. Piotr Gąsiorowski
-                            has suggested that Old English *docga is actually derived from Old English colour adjective dox.</p>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <figure class="mainfigure my-3">
-                            <img src="img/Cutest-dog-breeds-main.jpg" alt="Puppy picture">
-                        </figure>
-                    </div>
-                </div>
-                <!-- ROW NUMBER 3 -->
-                <div class="row justify-content-around bottom-line pb-3">
-                    <div class="col-12 col-lg-10">
-                        <div class="w3-content w3-display-container" style="width: 100%; overflow: hidden; background: black; margin-top: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.01);">
-                            <img class="mySlides" src="img/landscape-1486985094-dog.jpg" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/dogs-to-follow-on-instagram.png" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/A-puppy-with-a-toy.jpg" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/puppy-dog-eyes.jpg" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/vetstreet.brightspotcdn.com.jpg" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/ol9ceoqxidudap8owlwn.jpg" style="max-width:100%; max-height: 100%;">
-                            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="background: rgba(0,0,0,0.7); width: 30px; height: 30px;">&#10094;</div>
-                                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="background: rgba(0,0,0,0.7); width: 30px; height: 30px;">&#10095;</div>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+                    <div class="col-12 col-lg-6">
+                        <!----------------- CONTACT FORM -------------------->
+                        <form class="form-contact" method="post" action="#">
+
+                            <div class="form-group">
+                                <label>Username*</label>
+                                <input name="W_username" value="" class="form-control">
+                                <div class="error"></div>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label>Password*</label>
+                                <input name="W_password" type="password" value="" class="form-control" id="password">
+                                <div class="error"></div>
+                            </div>
+
+
+
+                            <input type="checkbox" name="checkbox" value="check" class="mt-2" /></span> Stay logged in.<br><br>
+
+
+                            <button type="submit" class="btn hvr-shutter-in-vertical" style="cursor: pointer; border-radius: 0;">SUBMIT</button>
+                            <a href="register.html" class="btn hvr-shutter-in-vertical" style="cursor: pointer; border-radius: 0;">Not a member? Register.</a>
+                        </form>
                     </div>
                 </div>
+
+
+
+
+
+
 
 
 
@@ -276,6 +249,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+    <script>
+        $('#password, #confirm_password').on('keyup', function() {
+            if ($('#password').val() == $('#confirm_password').val()) {
+                $('#message').html('Matching').css('color', 'green');
+            } else
+                $('#message').html('Not Matching').css('color', 'red');
+        });
+    </script>
     <script type="text/javascript">
         // FORM VALIDATION 
         $(document).ready(function() {
@@ -290,34 +271,23 @@
                         $(element).removeClass('form-control-danger').addClass('form-control-success');
                     },
                     rules: {
-                        W_name: {
+                        W_username: {
                             required: true,
-                            rangelength: [3, 255]
+                            rangelength: [6, 20]
                         },
-                        W_email: {
+                        W_password: {
                             required: true,
-                            rangelength: [5, 255],
-                            email: true
-                        },
-                        W_message: {
-                            required: true,
-                            rangelength: [10, 255]
+                            rangelength: [5, 20]
                         }
-
                     },
                     messages: {
-                        W_name: {
-                            required: "The *Name field is required!",
-                            rangelength: "The *Name must be between 3 and 255 characters!"
+                        W_username: {
+                            required: "The *Username field is required!",
+                            rangelength: "The *Name must be between 6 and 20 characters!"
                         },
-                        W_email: {
-                            required: "The *Email field is required!",
-                            rangelength: "The *Email must be between 5 and 255 characters!",
-                            email: "Please enter a valid email addres!"
-                        },
-                        W_message: {
-                            required: "The *Message field is required!",
-                            rangelength: "The *Message must be between 10 and 255 characters!",
+                        W_password: {
+                            required: "The *Password field is required!",
+                            rangelength: "The *Message must be between 5 and 20 characters!",
                             email: "Please enter a valid message!"
                         }
                     },
