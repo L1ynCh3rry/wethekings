@@ -56,6 +56,10 @@ main {
     height: 180px;
 }
 
+.w3-content img {
+    width: auto;
+}
+
 
 /************* MENU ***************/
 
@@ -201,7 +205,6 @@ header {
 footer {
     width: 100%;
     background: #f4426e;
-    height: 140px;
     border-top: 1px solid black;
     padding: 20px;
 }
@@ -260,15 +263,26 @@ footer a.visitus:hover {
     color: #f4426e;
 }
 
-.form-contact input.form-control {
-    width: 50%;
+.form-contact input.form-control,
+.form-contact textarea {
+    width: 100%;
     transition: 1s ease;
 }
 
 .form-contact input.form-control:hover,
 .form-contact input.form-control.active,
-.form-contact input.form-control:focus {
+.form-contact input.form-control:focus,
+.form-contact textarea:hover,
+.form-contact textarea.active,
+.form-contact textarea:focus {
     width: 100%;
+    border: 2px solid #f4426e;
+}
+
+.form-contact textarea {
+    border: 2px solid #f4426e;
+    background-color: black!important;
+    color: #f4426e;
 }
 
 
@@ -296,4 +310,44 @@ select:focus {
     font-size: 20px;
     color: black;
     margin-bottom: 0!important;
+}
+
+
+/* MASONRY */
+
+.grid-item {
+    width: 200px;
+}
+
+.grid-item--width2 {
+    width: 400px;
+}
+
+#getintouch {
+    position: fixed;
+    width: 95%;
+    margin-left: 2%;
+    margin-left: 2%;
+    margin-top: 10%;
+    background: #3b0077;
+    border: black;
+    padding: 10px 5px 5px;
+    border: 1px solid black;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+#getintouchclosebtn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.ginactive {
+    opacity: 1!important;
+    z-index: 3;
+}
+
+.admins h3 {
+    font-size: 36px;
 }
