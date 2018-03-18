@@ -345,6 +345,9 @@ select:focus {
 
 .ginactive {
     opacity: 1!important;
+}
+
+.z-index {
     z-index: 3;
 }
 
