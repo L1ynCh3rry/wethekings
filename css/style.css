@@ -20,6 +20,21 @@ a {
     overflow: hidden;
 }
 
+div#overlay {
+    opacity: 0.8;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.overlayactive {
+    z-index: 10!important;
+}
+
 .active {
     left: 0px;
 }
@@ -60,13 +75,17 @@ main {
     width: auto;
 }
 
+.singleh1 {
+    font-size: 18px;
+}
+
 
 /************* MENU ***************/
 
 header {
     width: 100%;
     height: 100%;
-    background: #f4426e;
+    background: #f7f6d2;
     z-index: 5;
     position: fixed;
     left: -105%;
@@ -85,13 +104,13 @@ header {
 }
 
 .menu li:hover a {
-    color: #f4426e;
+    color: #f7f6d2;
 }
 
 .menu li {
     display: block;
     border-bottom: 0.5px solid black;
-    background: #f4426e;
+    background: #f7f6d2;
     text-align: center;
 }
 
@@ -111,7 +130,7 @@ header {
 }
 
 .Rmenu li:hover a {
-    color: #f4426e;
+    color: #f7f6d2;
 }
 
 .Rmenu li {
@@ -119,7 +138,7 @@ header {
     margin: auto;
     border: 0.5px solid black;
     border-radius: 25px;
-    background: #f4426e;
+    background: #f7f6d2;
     padding: 5px;
     margin-top: 4px;
     text-align: center;
@@ -142,7 +161,7 @@ header {
     bottom: 0;
     left: 0;
     border: 1px solid black;
-    background: #f4426e;
+    background: #f7f6d2;
     color: black;
     padding: 5px 10px;
 }
@@ -158,7 +177,7 @@ header {
     height: 40px;
     border: 2px solid black;
     border-radius: 5px;
-    background: #f4426e;
+    background: #f7f6d2;
     z-index: 4;
 }
 
@@ -184,15 +203,15 @@ header {
     width: 50%;
     margin: auto;
     border-radius: 15px;
-    background: #f4426e;
+    background: #f7f6d2;
     color: black;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
     margin-bottom: 5px;
 }
 
 .readmore:hover {
     background: black;
-    color: #f4426e;
+    color: #f7f6d2;
 }
 
 .asideNews h1.blognews {
@@ -204,13 +223,13 @@ header {
 
 footer {
     width: 100%;
-    background: #f4426e;
+    background: #f7f6d2;
     border-top: 1px solid black;
     padding: 20px;
 }
 
 footer a.visitus {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 footer a.visitus:hover {
@@ -218,9 +237,9 @@ footer a.visitus:hover {
 }
 
 .social a {
-    padding-top: 7px;
+    margin: auto;
+    padding-top: 8px;
     display: block;
-    float: left;
     width: 45px;
     height: 45px;
     border: 2px solid black;
@@ -236,19 +255,15 @@ footer a.visitus:hover {
     padding-bottom: 20px;
 }
 
-.rs {
-    text-align: center;
-}
-
 
 /* FORM CONTACT*/
 
 .form-contact input,
 .form-contact input.active,
 .form-contact input:focus {
-    border: 2px solid #f4426e;
+    border: 2px solid #f7f6d2;
     background-color: black!important;
-    color: #f4426e;
+    color: #f7f6d2;
     background: no-repeat;
     background-position: right;
 }
@@ -258,9 +273,9 @@ footer a.visitus:hover {
 }
 
 .form-contact option {
-    border: 2px solid #f4426e;
+    border: 2px solid #f7f6d2;
     background-color: black!important;
-    color: #f4426e;
+    color: #f7f6d2;
 }
 
 .form-contact input.form-control,
@@ -269,41 +284,39 @@ footer a.visitus:hover {
     transition: 1s ease;
 }
 
-.form-contact input.form-control:hover,
 .form-contact input.form-control.active,
 .form-contact input.form-control:focus,
-.form-contact textarea:hover,
 .form-contact textarea.active,
 .form-contact textarea:focus {
     width: 100%;
-    border: 2px solid #f4426e;
+    border: 2px solid #f7f6d2;
 }
 
 .form-contact textarea {
-    border: 2px solid #f4426e;
+    border: 2px solid #f7f6d2;
     background-color: black!important;
-    color: #f4426e;
+    color: #f7f6d2;
 }
 
 
 /* OPTIONS */
 
 select {
-    border: 2px solid #f4426e!important;
+    border: 2px solid #f7f6d2!important;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: black url(down-arrow.png) no-repeat right center;
     width: 40%!important;
     text-indent: 0.01px;
     text-overflow: "";
-    color: #f4426e;
+    color: #f7f6d2;
     padding: 5px;
 }
 
 select:hover,
 select.active,
 select:focus {
-    color: #f4426e;
+    color: #f7f6d2;
 }
 
 .form-contact label {
@@ -312,16 +325,21 @@ select:focus {
     margin-bottom: 0!important;
 }
 
+.fgsingle label {
+    font-size: 20px;
+    color: #f7f6d2;
+    margin-bottom: 0!important;
+}
+
 
 /* MASONRY */
 
 .grid-item {
-    width: 200px;
+    width: 100%;
 }
 
-.grid-item--width2 {
-    width: 400px;
-}
+
+/* GET IN TOCUH */
 
 #getintouch {
     position: fixed;
@@ -329,7 +347,7 @@ select:focus {
     margin-left: 2%;
     margin-left: 2%;
     margin-top: 10%;
-    background: #3b0077;
+    background: #f7f6d2;
     border: black;
     padding: 10px 5px 5px;
     border: 1px solid black;
@@ -348,9 +366,32 @@ select:focus {
 }
 
 .z-index {
-    z-index: 3;
+    z-index: 30;
 }
 
 .admins h3 {
     font-size: 36px;
+}
+
+
+/* BUY A DOG */
+
+#buyadog {
+    position: fixed;
+    width: 95%;
+    margin-left: 2%;
+    margin-left: 2%;
+    margin-top: 10%;
+    background: #f7f6d2;
+    border: black;
+    border: 1px solid black;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+#buyadogclosebtn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
 }

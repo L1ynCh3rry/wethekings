@@ -4,6 +4,9 @@
     .w3-content {
         height: 320px;
     }
+    .singleh1 {
+        font-size: 22px;
+    }
 }
 
 @media(min-width:768px) {
@@ -21,6 +24,21 @@
         margin-left: 12.5%;
         padding: 25px 25px 15px;
     }
+    .singleh1 {
+        font-size: 24px;
+    }
+    footer a.visitus {
+        font-size: 20px;
+    }
+    #buyadog {
+        width: 75%;
+        margin-left: 12.5%;
+        margin-left: 12.5%;
+        margin-top: 10%;
+    }
+    .grid-item {
+        width: 40%;
+    }
 }
 
 @media(min-width:992px) {
@@ -30,7 +48,6 @@
     /* MENU*/
     header {
         width: 100%;
-        background: #f4426e;
         height: 41px;
         z-index: 5;
         position: fixed;
@@ -47,14 +64,11 @@
         font-size: 22px;
         transition: 0.4s linear;
     }
-    .menu li:hover a {
-        color: #f4426e;
-    }
+    .menu li:hover a {}
     .menu li {
         width: 100px;
         float: left;
         border-bottom: 0.5px solid black;
-        background: #f4426e;
         text-align: center;
         border-right: 0.02px solid black;
     }
@@ -71,15 +85,12 @@
         font-size: 16px;
         transition: 0.4s linear;
     }
-    .Rmenu li:hover a {
-        color: #f4426e;
-    }
+    .Rmenu li:hover a {}
     .Rmenu li {
         width: 100px;
         float: right;
         border: 0.5px solid black;
         border-radius: 25px;
-        background: #f4426e;
         text-align: center;
         margin-right: 5px;
         padding: 0;
@@ -100,7 +111,7 @@
         width: 50%;
     }
     .asideNews {
-        border-left: 10px solid #190033;
+        border-left: 10px solid #00001e;
     }
     .asideNews h1.blognews {
         text-align: left;
@@ -115,10 +126,28 @@
         margin-left: 20%;
         padding: 25px 25px 15px;
     }
+    .singleh1 {
+        font-size: 28px;
+    }
+    footer a.visitus {
+        font-size: 24px;
+    }
+    #buyadog {
+        width: 60%;
+        margin-left: 20%;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+    .grid-item {
+        width: 28%;
+    }
 }
 
 @media(min-width:1200px) {
     .readmore {
         width: 30%;
+    }
+    .singleh1 {
+        font-size: 32px;
     }
 }

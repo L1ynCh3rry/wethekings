@@ -77,14 +77,11 @@ if(isset($_GET) && !empty($_GET)){
         <span></span>
     </div>
     <!---------- HEADER START ---------->
-    <header class="header">
+    <header class="header" style="transition: 1s ease;">
         <div>
             <ul class="menu list-unstyled">
                 <li>
                     <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="litters.htlm">Litters</a>
                 </li>
                 <li>
                     <a href="blog.html">Blog</a>
@@ -149,7 +146,8 @@ if(isset($_GET) && !empty($_GET)){
             <button type="submit" class="btn hvr-shutter-in-vertical" style="cursor: pointer; border-radius: 0;">Send</button>
         </form>
     </div>
-
+    <div id="overlay">
+    </div>
 
 
 
@@ -172,8 +170,8 @@ if(isset($_GET) && !empty($_GET)){
 
 
                     <!-- SINGLE CONTACT -->
-                    <div class="col-12 col-md-2 my-4 photozoom" style="border: 1px solid black; box-shadow: 0 0 25px black; background: #3b0077; color: #f4426e;">
-                        <figure class="m-0 p-0" style="border: 3px solid #3b0077; box-shadow: inset 0 0 15px black; overflow: hidden; background: white;">
+                    <div class="col-12 col-md-2 my-4 photozoom" style="border: 1px solid black; box-shadow: 0 0 25px black; background: #00013d; color: #f7f6d2;">
+                        <figure class="m-0 p-0" style="border: 3px solid #00013d; box-shadow: inset 0 0 15px black; overflow: hidden; background: white;">
                             <img src="img/comment.png">
                         </figure>
                         <div class="px-2 pb-4" style="">
@@ -187,11 +185,11 @@ if(isset($_GET) && !empty($_GET)){
                     <!-- SINGLE CONTACT END -->
 
                     <!-- SINGLE CONTACT -->
-                    <div class="col-12 col-md-2 my-4 photozoom" style="border: 1px solid black; box-shadow: 0 0 25px black; background: #3b0077; color: #f4426e;">
-                        <figure class="m-0 p-0" style="border: 3px solid #3b0077; box-shadow: inset 0 0 15px black; overflow: hidden; background: #f2f2f2;">
+                    <div class="col-12 col-md-2 my-4 photozoom" style="border: 1px solid black; box-shadow: 0 0 25px black; background: #00013d; color: #f7f6d2;">
+                        <figure class="m-0 p-0" style="border: 3px solid #00013d; box-shadow: inset 0 0 15px black; overflow: hidden; background: #f7f6d2;">
                             <img src="img/face_PNG11754.png">
                         </figure>
-                        <div class="px-2 pb-4" style="background: #3b0077;">
+                        <div class="px-2 pb-4" style="background: #00013d;">
                             <h3 class="my-0">Sophia</h3>
                             <h4 class="my-0">Java script developer</h4>
                             <p class="my-0">+381-63-451-523</p>
@@ -202,11 +200,11 @@ if(isset($_GET) && !empty($_GET)){
                     <!-- SINGLE CONTACT END -->
 
                     <!-- SINGLE CONTACT -->
-                    <div class="col-12 col-md-2 my-4 photozoom" style="border: 1px solid black; box-shadow: 0 0 25px black; background: #3b0077; color: #f4426e;">
-                        <figure class="m-0 p-0" style="border: 3px solid #3b0077; box-shadow: inset 0 0 15px black; overflow: hidden; background: #f2f2f2;">
+                    <div class="col-12 col-md-2 my-4 photozoom" style="border: 1px solid black; box-shadow: 0 0 25px black; background: #00013d; color: #f7f6d2;">
+                        <figure class="m-0 p-0" style="border: 3px solid #00013d; box-shadow: inset 0 0 15px black; overflow: hidden; background: #f7f6d2;">
                             <img src="img/comment1.jpg">
                         </figure>
-                        <div class="px-2 pb-4" style="background: #3b0077;">
+                        <div class="px-2 pb-4" style="background: #00013d;">
                             <h3 class="my-0">Katherin</h3>
                             <h4 class="my-0">Photoshop</h4>
                             <p class="my-0">+381-61-4265-725</p>
@@ -217,11 +215,11 @@ if(isset($_GET) && !empty($_GET)){
                     <!-- SINGLE CONTACT END -->
 
                     <!-- SINGLE CONTACT -->
-                    <div class="col-12 col-md-2 my-4 photozoom" style="border: 1px solid black; box-shadow: 0 0 25px black; background: #3b0077; color: #f4426e;">
-                        <figure class="m-0 p-0" style="border: 3px solid #3b0077; box-shadow: inset 0 0 15px black; overflow: hidden; background: #f2f2f2;">
+                    <div class="col-12 col-md-2 my-4 photozoom" style="border: 1px solid black; box-shadow: 0 0 25px black; background: #00013d; color: #f7f6d2;">
+                        <figure class="m-0 p-0" style="border: 3px solid #00013d; box-shadow: inset 0 0 15px black; overflow: hidden; background: #f7f6d2;">
                             <img src="img/face_PNG5643.png">
                         </figure>
-                        <div class="px-2 pb-4" style="background: #3b0077;">
+                        <div class="px-2 pb-4" style="background: #00013d;">
                             <h3 class="my-0">Danny</h3>
                             <h4 class="my-0">PHP, MySQL and APACHE Developer</h4>
                             <p class="my-0">+381-65-5364-745</p>
@@ -260,41 +258,36 @@ if(isset($_GET) && !empty($_GET)){
 
     <!---------- FOOTER START ---------->
     <footer>
-        <div class="row justify-content-between ">
-            <div class="col-12 col-lg-4 ls ">
-                <span style="color: black; " class="fab fa-phoenix-framework fa-2x "></span>
-                <a class="visitus " href="https://cubes.edu.rs/ ">Visit our course page</a>
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-4 ls">
+                <span style="color: black;" class="fab fa-phoenix-framework fa-2x"></span>
+                <a class="visitus" href="https://cubes.edu.rs/">Visit our course page</a>
             </div>
-            <div class="col-12 col-lg-5 rs ">
-                <div class="row social ">
-                    <div class="col-2 ">
-                        <a href="# ">
-                            <span class="fab fa-google-plus-g fa-lg "></span>
+            <div class="col-12 col-lg-5 text-center">
+                <div class="row social justify-content-between no-gutters">
+                    <div class="col-2">
+                        <a href="#">
+                            <span class="fab fa-google-plus-g fa-lg"></span>
                         </a>
                     </div>
-                    <div class="col-2 ">
-                        <a href="# ">
-                            <span class="fab fa-facebook-f fa-lg "></span>
+                    <div class="col-2">
+                        <a href="#">
+                            <span class="fab fa-facebook-f fa-lg"></span>
                         </a>
                     </div>
-                    <div class="col-2 ">
-                        <a href="# ">
-                            <span class="fab fa-twitter fa-lg "></span>
+                    <div class="col-2">
+                        <a href="#">
+                            <span class="fab fa-twitter fa-lg"></span>
                         </a>
                     </div>
-                    <div class="col-2 ">
-                        <a href="# ">
-                            <span class="fab fa-whatsapp fa-lg "></span>
+                    <div class="col-2">
+                        <a href="#">
+                            <span class="fab fa-viber fa-lg"></span>
                         </a>
                     </div>
-                    <div class="col-2 ">
-                        <a href="# ">
-                            <span class="fab fa-viber fa-lg "></span>
-                        </a>
-                    </div>
-                    <div class="col-2 ">
-                        <a href="# ">
-                            <span class="fab fa-skype fa-lg "></span>
+                    <div class="col-2">
+                        <a href="#">
+                            <span class="fab fa-skype fa-lg"></span>
                         </a>
                     </div>
                 </div>

@@ -23,10 +23,12 @@ $(document).ready(function() {
     $('#getintouchbtn').click(function() {
         $('#getintouch').addClass('ginactive');
         $('#getintouch').addClass('z-index');
+        $('#overlay').addClass('overlayactive');
         $('body').addClass('inactive');
     });
     $('#getintouchclosebtn').click(function() {
         $('#getintouch').removeClass('ginactive');
+        $('#overlay').removeClass('overlayactive');
         setTimeout(
             function() {
                 $('#getintouch').removeClass('z-index');
@@ -39,10 +41,12 @@ $(document).ready(function() {
     $('#getintouchbtn2').click(function() {
         $('#getintouch').addClass('ginactive');
         $('#getintouch').addClass('z-index');
+        $('#overlay').addClass('overlayactive');
         $('body').addClass('inactive');
     });
     $('#getintouchclosebtn').click(function() {
         $('#getintouch').removeClass('ginactive');
+        $('#overlay').removeClass('overlayactive');
         setTimeout(
             function() {
                 $('#getintouch').removeClass('z-index');
@@ -55,10 +59,12 @@ $(document).ready(function() {
     $('#getintouchbtn3').click(function() {
         $('#getintouch').addClass('ginactive');
         $('#getintouch').addClass('z-index');
+        $('#overlay').addClass('overlayactive');
         $('body').addClass('inactive');
     });
     $('#getintouchclosebtn').click(function() {
         $('#getintouch').removeClass('ginactive');
+        $('#overlay').removeClass('overlayactive');
         setTimeout(
             function() {
                 $('#getintouch').removeClass('z-index');
@@ -72,16 +78,40 @@ $(document).ready(function() {
     $('#getintouchbtn4').click(function() {
         $('#getintouch').addClass('ginactive');
         $('#getintouch').addClass('z-index');
+        $('#overlay').addClass('overlayactive');
         $('body').addClass('inactive');
     });
     $('#getintouchclosebtn').click(function() {
         $('#getintouch').removeClass('ginactive');
+        $('#overlay').removeClass('overlayactive');
         setTimeout(
             function() {
                 $('#getintouch').removeClass('z-index');
             }, 800);
         $('body').removeClass('inactive');
     });
+
+
+
+    /* BUY A DOG*/
+    $('#buyadogbtn').click(function() {
+        $('#buyadog').addClass('ginactive');
+        $('#buyadog').addClass('z-index');
+        $('#overlay').addClass('overlayactive');
+        $('body').addClass('inactive');
+    });
+    $('#buyadogclosebtn').click(function() {
+        $('#buyadog').removeClass('ginactive');
+        $('#overlay').removeClass('overlayactive');
+        setTimeout(
+            function() {
+                $('#buyadog').removeClass('z-index');
+            }, 800);
+        $('body').removeClass('inactive');
+    });
+
+
+
 
 
 });
@@ -101,7 +131,7 @@ function initMap() {
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
-        styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#ef2300" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }]
+        styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#f7f6d2" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }]
     };
 
     // Get the HTML DOM element that will contain your map 
