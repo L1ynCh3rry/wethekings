@@ -59,6 +59,20 @@ $(document).ready(function() {
         $('#main').css('margin-left', "-100vw");
     });
 
+    /********************** GO HOME *************************/
+    /* MUSIC */
+    $('#gohomemusic').click(function() {
+        $('#singlemusic').css('opacity', "0");
+        $('#singlemusic').css('z-index', "-1");
+        $('#main').css('margin-left', "0");
+    });
+    /* VIDEO */
+    $('#gohomevideo').click(function() {
+        $('#singlevideo').css('opacity', "0");
+        $('#singlevideo').css('z-index', "-1");
+        $('#main').css('margin-left', "0");
+    });
+
 
 
 

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="My new WP theme">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="We the kings">
+    <meta name="keywords" content="We the king,Luka,Cosic">
     <meta name="author" content="Luka Cosic">
     <title>We The Kings</title>
 
@@ -44,14 +44,18 @@
             background: #001e4f;
         }
         
-        #main .menu {
+        .menu {
             border: 5px solid #fff;
             color: #fff;
+        }
+        
+        .menu:hover {
+            color: #001e4f;
         }
         /* HOVER */
         
         .hvr-shutter-in-horizontal {
-            background: #010038;
+            background: #fff;
         }
         
         .hvr-shutter-in-horizontal:before {
@@ -66,8 +70,51 @@
         }
         
         #myprofile {
-            background: #003791;
+            background: #001e4f;
             color: #fff;
+        }
+        
+        .gohome {
+            padding: 10px;
+            border: 2px solid #fff;
+            background: #001e4f;
+            color: #fff;
+        }
+        
+        .h1 {
+            color: #fff;
+        }
+        
+        .songs {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        
+        .songs:hover,
+        .songs:hover h2 {
+            color: #001e4f;
+        }
+        
+        .fas {
+            color: #fff;
+        }
+        
+        .hvr-bounce-to-right:before {
+            background: #fff;
+        }
+        
+        h2,
+        h3 {
+            color: #fff;
+        }
+        
+        .post {
+            color: #fff;
+        }
+        
+        .bordertb {
+            border-top: 3px solid #fff;
+            border-bottom: 3px solid #fff;
         }
     </style>
 </head>
@@ -87,21 +134,32 @@
 
                     <!-- SCREEN MAIN -->
                     <div class="col-4 screens">
-                        <div class="row text-center m-auto" style="width: 60%; padding-top: 20vh;">
-                            <div id="goprofilebtn" class="col-5 menu hvr-shutter-in-horizontal" style="border-right: none; border-bottom: none;">
-                                <i class="fas fa-user" style="color: white; font-size: 34px;"></i>
+
+
+                        <div style="position: absolute; top: -5px; left: 50vw; color: #fff;transform: translateX(-50%);">
+                            <p style="margin-bottom: -15px;">THEMES</p>
+                            <form>
+                                <input type="radio">
+                            </form>
+                            <i class="fas fa-angle-down fa-3x" id="themebtn" style="cursor: pointer;"></i>
+                        </div>
+
+
+                        <div class="row text-center m-auto" style="width: 50%; padding-top: 20vh;">
+                            <div id="goprofilebtn" class="col-6 menu hvr-shutter-in-horizontal" style="border-right: none; border-bottom: none;">
+                                <i class="fas fa-user" style="font-size: 34px;"></i>
                                 <h1>My profile</h1>
                             </div>
-                            <div id="goblogbtn" class="col-5 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
-                                <i class="fas fa-th-large" style="color: white; font-size: 34px"></i>
+                            <div id="goblogbtn" class="col-6 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
+                                <i class="fas fa-th-large" style="font-size: 34px"></i>
                                 <h1>Check blog.</h1>
                             </div>
-                            <div class="col-5 menu hvr-shutter-in-horizontal" style=" border-right: none;">
-                                <i class="far fa-clipboard" style="color: white; font-size: 34px"></i>
+                            <div class="col-6 menu hvr-shutter-in-horizontal" style=" border-right: none;">
+                                <i class="far fa-clipboard" style="font-size: 34px"></i>
                                 <h1>Posts(Coming soon).</h1>
                             </div>
-                            <div id="gomusicbtn" class="col-5 menu hvr-shutter-in-horizontal">
-                                <i class="fas fa-headphones" style="color: white; font-size: 34px"></i>
+                            <div id="gomusicbtn" class="col-6 menu hvr-shutter-in-horizontal">
+                                <i class="fas fa-headphones" style="font-size: 34px"></i>
                                 <h1 class="pr-2">Music &amp; Video</h1>
                             </div>
                         </div>
@@ -110,22 +168,22 @@
 
 
 
-                    <!-- SCREEN MUSIC&VIDEO -->
+                    <!-- SCREEN CHOOSE MUSIC&VIDEO -->
                     <div class="col-4 screens">
-                        <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Music and Video</h1>
+                        <h1 class="h1">Music and Video</h1>
                         <div class="gobackbtn" id="gobackmusic">
                             <i class="fas fa-angle-left"></i>
                         </div>
-                        <div class="row text-center m-auto" style="width: 80%; padding-top: 20vh;">
+                        <div class="row text-center m-auto" style="width: 100%; padding-top: 20vh;">
                             <div class="col-12">
-                                <div id="gosinglemusicbtn" class="col-5 menu hvr-shutter-in-horizontal">
-                                    <i class="fas fa-headphones" style="color: white; font-size: 34px;"></i>
+                                <div id="gosinglemusicbtn" class="col-5 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
+                                    <i class="fas fa-headphones" style="font-size: 34px;"></i>
                                     <h1>Music</h1>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div id="gosinglevideobtn" class="col-5 menu hvr-shutter-in-horizontal">
-                                    <i class="fas fa-video" style="color: white; font-size: 34px;"></i>
+                                    <i class="fas fa-video" style="font-size: 34px;"></i>
                                     <h1>Video</h1>
                                 </div>
                             </div>
@@ -137,18 +195,92 @@
 
                     <!-- SCREEN MUSIC OR VIDEO -->
                     <div class="col-4 screens">
+
+
+
+
                         <div id="singlemusic">
-                            <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Music</h1>
-                            <div class="gobackbtn" id="gobacksinglemusic">
+                            <!-- BUTTONS -->
+                            <div class="gobackbtn" id="gobacksinglemusic" style="left: 100px">
                                 <i class="fas fa-angle-left"></i>
                             </div>
+                            <div class="gobackbtn" id="gohomemusic" style="padding: 10px 15px;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <!-- BUTTONS END -->
+                            <h1 class="h1">Music</h1>
+
+
+                            <!-- MUSIC LIST -->
+                            <div class="row justify-content-around mt-5 no-gutters mx-auto bordertb" style="width: 60%; max-height: 80vh; overflow-y: auto;">
+
+
+
+                                <div class="col-12 songs hvr-bounce-to-right">
+                                    <div class="row no-gutters">
+                                        <div class="col-10 col-lg-2 text-center">
+                                            <i class="fas fa-headphones fa-3x"></i>
+                                        </div>
+                                        <div class="col-12 col-lg-10 py-1">
+                                            <h2>Song name</h2>
+                                            <p class="mb-0">Song time</p>
+                                            <p>Artist</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
                         </div>
                         <div id="singlevideo">
-                            <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Video</h1>
-                            <div class="gobackbtn" id="gobacksinglevideo">
+                            <!-- BUTTONS -->
+                            <div class="gobackbtn" id="gobacksinglevideo" style="left: 100px">
                                 <i class="fas fa-angle-left"></i>
                             </div>
+                            <div class="gobackbtn" id="gohomevideo" style="padding: 10px 15px;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <!-- BUTTONS ENDS -->
+                            <h1 class="h1">Video</h1>
+
+
+
+                            <!-- VIDEO LIST -->
+                            <div class="row justify-content-around mt-5 no-gutters mx-auto" style="width: 70%; max-height: 80vh; overflow-y: auto; border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
+
+
+                                <div class="col-8 py-3" style="border-bottom: 1px solid #fff">
+                                    <h2>La La Dog</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wyX7_FGmJFg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+
+                                <div class="col-8 py-3" style="border-bottom: 1px solid #fff">
+                                    <h2>La La Dog</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wyX7_FGmJFg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="col-8 py-3" style="border-bottom: 1px solid #fff">
+                                    <h2>Dogs who failed to be dogs</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kMhw5MFYU0s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+
+                            </div>
                         </div>
+
+
+
+
+
+
+
                     </div>
 
 
@@ -156,19 +288,39 @@
 
                     <!-- SCREEN BLOG -->
                     <div class="col-4 screens">
-                        <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Blog</h1>
+                        <!-- GO BACK BUTTON -->
                         <div class="gobackbtn" id="gobackblog">
                             <i class="fas fa-angle-up"></i>
+                        </div>
+                        <h1 class="h1">Blog</h1>
+
+                        <div class="row m-auto p-3" style="width: 90vw; max-height: 90vh; overflow-y: auto;">
+
+
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0" style="border: 1px solid #fff;box-shadow: 0 0 10px #fff;">
+                                <div class="row no-gutters post">
+                                    <div class="col-12">
+                                        <figure class="m-0" style="overflow: hidden;">
+                                            <img src="img/post.jpg">
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 text-center px-3">
+                                        <h1>Naslov</h1>
+                                        <p>Text</p>
+                                        <p style="text-align: right;">Luka Cosic</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
                     </div>
 
 
 
 
-                    <!-- SCREEN SINGLE POST -->
-                    <div class="col-4 screens">
-                        <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Single posts coming soon.</h1>
-                    </div>
 
 
                 </div>

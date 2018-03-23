@@ -12,6 +12,10 @@ h1 {
     transition: 1s ease;
 }
 
+img {
+    width: 100%;
+}
+
 
 /* MENU */
 
@@ -29,6 +33,7 @@ h1 {
     height: 100vh;
     width: 100vw;
     position: relative;
+    text-align: center;
 }
 
 .gobackbtn {
@@ -63,9 +68,9 @@ h1 {
     transition: 1s ease;
 }
 
-#singlemusic {}
-
-#singlevideo {}
+.songs {
+    text-align: left;
+}
 
 
 /* REMOVE SCROLL */

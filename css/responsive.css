@@ -2,7 +2,11 @@
 
 @media(min-width:576px) {}
 
-@media(min-width:768px) {}
+@media(min-width:768px) {
+    #singlemusic .fa-headphones.fa-3x {
+        transform: translateY(50%);
+    }
+}
 
 @media(min-width:992px) {}
 
