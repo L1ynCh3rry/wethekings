@@ -41,11 +41,12 @@
     <style>
         #main {
             background: #fff2d3;
+            background: #001e4f;
         }
         
         #main .menu {
-            border: 5px solid white;
-            color: white;
+            border: 5px solid #fff;
+            color: #fff;
         }
         /* HOVER */
         
@@ -55,6 +56,18 @@
         
         .hvr-shutter-in-horizontal:before {
             background: #fff2d3;
+            background: #001e4f;
+        }
+        
+        .gobackbtn {
+            color: #fff;
+            background: transparent;
+            border: 2px solid #fff;
+        }
+        
+        #myprofile {
+            background: #003791;
+            color: #fff;
         }
     </style>
 </head>
@@ -74,8 +87,8 @@
 
                     <!-- SCREEN MAIN -->
                     <div class="col-4 screens">
-                        <div class="row text-center m-auto Mmenu" style="width: 60%; padding-top: 20vh;">
-                            <div class="col-5 menu hvr-shutter-in-horizontal" style="border-right: none; border-bottom: none;">
+                        <div class="row text-center m-auto" style="width: 60%; padding-top: 20vh;">
+                            <div id="goprofilebtn" class="col-5 menu hvr-shutter-in-horizontal" style="border-right: none; border-bottom: none;">
                                 <i class="fas fa-user" style="color: white; font-size: 34px;"></i>
                                 <h1>My profile</h1>
                             </div>
@@ -85,7 +98,7 @@
                             </div>
                             <div class="col-5 menu hvr-shutter-in-horizontal" style=" border-right: none;">
                                 <i class="far fa-clipboard" style="color: white; font-size: 34px"></i>
-                                <h1>Posts</h1>
+                                <h1>Posts(Coming soon).</h1>
                             </div>
                             <div id="gomusicbtn" class="col-5 menu hvr-shutter-in-horizontal">
                                 <i class="fas fa-headphones" style="color: white; font-size: 34px"></i>
@@ -99,7 +112,24 @@
 
                     <!-- SCREEN MUSIC&VIDEO -->
                     <div class="col-4 screens">
-                        <h1>Music and Video</h1>
+                        <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Music and Video</h1>
+                        <div class="gobackbtn" id="gobackmusic">
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                        <div class="row text-center m-auto" style="width: 80%; padding-top: 20vh;">
+                            <div class="col-12">
+                                <div id="gosinglemusicbtn" class="col-5 menu hvr-shutter-in-horizontal">
+                                    <i class="fas fa-headphones" style="color: white; font-size: 34px;"></i>
+                                    <h1>Music</h1>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div id="gosinglevideobtn" class="col-5 menu hvr-shutter-in-horizontal">
+                                    <i class="fas fa-video" style="color: white; font-size: 34px;"></i>
+                                    <h1>Video</h1>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -107,7 +137,18 @@
 
                     <!-- SCREEN MUSIC OR VIDEO -->
                     <div class="col-4 screens">
-                        Coming soon.
+                        <div id="singlemusic">
+                            <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Music</h1>
+                            <div class="gobackbtn" id="gobacksinglemusic">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                        </div>
+                        <div id="singlevideo">
+                            <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Video</h1>
+                            <div class="gobackbtn" id="gobacksinglevideo">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -115,7 +156,10 @@
 
                     <!-- SCREEN BLOG -->
                     <div class="col-4 screens">
-                        <h1>Blog</h1>
+                        <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Blog</h1>
+                        <div class="gobackbtn" id="gobackblog">
+                            <i class="fas fa-angle-up"></i>
+                        </div>
                     </div>
 
 
@@ -123,7 +167,7 @@
 
                     <!-- SCREEN SINGLE POST -->
                     <div class="col-4 screens">
-                        <h1>Coming soon.</h1>
+                        <h1 style="color: #fff; margin-left: 250px; display: inline-block;">Single posts coming soon.</h1>
                     </div>
 
 
@@ -133,7 +177,12 @@
         </section>
     </main>
 
+    <div class="" id="myprofile">
+        <div class="gobackbtn" id="gobackprofile" style="right: 5px; left: auto;">
+            <i class="fas fa-times"></i>
+        </div>
 
+    </div>
 
 
 
