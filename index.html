@@ -9,11 +9,13 @@
     <meta name="description" content="My new WP theme">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Luka Cosic">
-    <title>My New WP Theme</title>
+    <title>We The Kings</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+
+    <link rel="icon" href="img/logo.png" sizes="16x16 32x32" type="image/png">
 
 
     <!-- FONT AWESOME -->
@@ -21,8 +23,7 @@
 
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&amp;subset=latin-ext" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -38,177 +39,114 @@
               <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
             <![endif]-->
     <style>
-        .mySlides {
-            display: none
+        div#main {
+            display: block;
+            width: 200vw;
+            height: 200vh;
+            transition: 1s ease;
+            overflow-y: hidden;
         }
         
-        .w3-left,
-        .w3-right,
-        .w3-badge {
-            cursor: pointer
+        #main .screens {
+            height: 100vh;
+            position: relative;
         }
         
-        .w3-badge {
-            height: 13px;
-            width: 13px;
-            padding: 0
+        body {
+            position: relative;
+        }
+        
+        .moveright {
+            margin-left: -100vw;
+        }
+        
+        .movedown {
+            margin-top: -100vh;
+        }
+        
+        #main .menu {
+            border: 5px solid white;
+            color: white;
+            cursor: pointer;
+            height: 30vh;
+            line-height: 30vh;
+        }
+        
+        .menu h1 {
+            display: inline-block
+        }
+        /* HOVER */
+        
+        .hvr-shutter-in-horizontal {
+            background: #010038;
+        }
+        
+        .hvr-shutter-in-horizontal:before {
+            background: #fff2d3;
+            -webkit-transition-duration: .2s;
+            transition-duration: .2s;
         }
     </style>
 </head>
 
-<body>
-    <!-- Button Trigger for menu on smartphones -->
-    <div class="menu-trigger" style="cursor: pointer;">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <!---------- HEADER START ---------->
-    <header class="header" style="transition: 1s ease;">
-        <div>
-            <ul class="menu list-unstyled">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="shop.html">Shop</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul class="Rmenu list-unstyled">
-                <li>
-                    <a href="register.html">REGISTER</a>
-                </li>
-                <li>
-                    <a href="login.html">LOG IN</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <!---------- CLOSE BUTTON ON SMARTPHONES ---------->
-            <a class="closebtn" href="#">close</a>
-        </div>
-    </header>
-    <!---------- HEADER END ---------->
+<body style="overflow: hidden">
 
 
 
+    <!-- MAIN -->
+    <main style="overflow: hidden">
+        <section>
+            <!-- MAIN DIV (SCREEN) -->
+            <div id="main" style="background: #fff2d3; overflow: hidden">
+                <div class="row no-gutters">
 
 
 
-
-    <!---------- MAIN START ---------->
-    <main>
-        <div class="row">
-            <div class="col-12 col-lg-9" style="background: #b5db0a;">
-
-                <!-- ROW NUMBER 1 -->
-                <div class="row bottom-line justify-content-around">
-                    <div class="col-6 col-lg-3">
-                        <figure class="mainfigure my-3">
-                            <img src="img/main.jpg" alt="Dogs picture">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <h1>Dogs</h1>
-                        <p>
-                            The domestic dog (Canis lupus familiaris or Canis familiaris) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant gray wolf are sister taxa as
-                            modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated and has been selectively bred
-                            over millennia for various behaviors, sensory capabilities, and physical attributes.
-                        </p>
-                    </div>
-                </div>
-                <!-- ROW NUMBER 2 -->
-                <div class="row bottom-line justify-content-around">
-                    <div class="col-12 col-lg-9">
-                        <h2>Etymology</h2>
-                        <p>The term "domestic dog" is generally used for both domesticated and feral varieties. The English word dog comes from Middle English dogge, from Old English docga, a "powerful dog breed". The term may possibly derive from Proto-Germanic
-                            *dukkōn, represented in Old English finger-docce ("finger-muscle"). The word also shows the familiar petname diminutive -ga also seen in frogga "frog", picga "pig", stagga "stag", wicga "beetle, worm", among others. Piotr Gąsiorowski
-                            has suggested that Old English *docga is actually derived from Old English colour adjective dox.</p>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <figure class="mainfigure my-3">
-                            <img src="img/Cutest-dog-breeds-main.jpg" alt="Puppy picture">
-                        </figure>
-                    </div>
-                </div>
-                <!-- ROW NUMBER 3 -->
-                <div class="row justify-content-around bottom-line pb-3">
-                    <div class="col-12 col-lg-10">
-                        <div class="w3-content w3-display-container d-flex justify-content-center" style="text-align: center; width: 100%; overflow: hidden; background: black; margin-top: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.01);">
-                            <img class="mySlides" src="img/landscape-1486985094-dog.jpg" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/dogs-to-follow-on-instagram.png" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/A-puppy-with-a-toy.jpg" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/puppy-dog-eyes.jpg" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/vetstreet.brightspotcdn.com.jpg" style="max-width:100%; max-height: 100%;">
-                            <img class="mySlides" src="img/ol9ceoqxidudap8owlwn.jpg" style="max-width:100%; max-height: 100%;">
-                            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="background: rgba(0,0,0,0.7); width: 30px; height: 30px;">&#10094;</div>
-                                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="background: rgba(0,0,0,0.7); width: 30px; height: 30px;">&#10095;</div>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+                    <!-- SCREEN 1 -->
+                    <div class="col-6 screens">
+                        <div class="row text-center m-auto Mmenu" style="width: 60%; padding-top: 20vh;">
+                            <div class="col-5 menu hvr-shutter-in-horizontal" style="border-right: none; border-bottom: none;">
+                                <i class="fas fa-user" style="color: white; font-size: 34px;"></i>
+                                <h1>My profile</h1>
+                            </div>
+                            <div id="godownbtn" class="col-5 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
+                                <i class="fas fa-th-large" style="color: white; font-size: 34px"></i>
+                                <h1>Check blog.</h1>
+                            </div>
+                            <div class="col-5 menu hvr-shutter-in-horizontal" style=" border-right: none;">
+                                <i class="far fa-clipboard" style="color: white; font-size: 34px"></i>
+                                <h1>Posts</h1>
+                            </div>
+                            <div id="gorightbtn" class="col-5 menu hvr-shutter-in-horizontal">
+                                <i class="fas fa-headphones" style="color: white; font-size: 34px"></i>
+                                <h1 class="pr-2">Music</h1>
                             </div>
                         </div>
                     </div>
-                </div>
+
+
+                    <!-- SCREEN 2 -->
+                    <div class="col-6 screens">
+                        <h1>Music</h1>
+                    </div>
+
+
+                    <div class="col-6 screens">
+                        <h1>Blog</h1>
+                    </div>
 
 
 
-            </div>
-            <div class="col-12 col-lg-3 asideNews" style="background: #00013d; color: #b5db0a;">
-                <div>
-                    <!-- NEWS -->
-                    <h1 class="blognews">BLOG NEWS</h1>
-                    <div class="row justify-content-around no-gutters">
-
-                        <!-- NEWS 1 -->
-                        <div class="col-11 mb-3 newshover photozoom" style="border: 0.5px solid black; text-align: center; background: #f7f6d2; cursor: pointer;">
-                            <figure style="max-width: 100%; max-height: 100%; overflow: hidden;">
-                                <img src="img/dog-snow.jpg">
-                            </figure>
-                            <h3 style="background: #b5db0a; color: black; border-bottom: 0.5px solid black;" class="m-0 py-2 newsh3hover">Grit used on roads during snowy weather can be dangerous for pets.</h3>
-                            <p style="color: black; text-align: justify;" class="px-2">Gritters are out in full force this week as the UK is faced with sub-zero temperatures at the hands of the Beast from the East and Storm Emma.</p>
-                            <a href="single.html" class="readmore">Read more</a>
-                        </div>
-
-                        <!-- NEWS 2 -->
-                        <div class="col-11 mb-3 newshover photozoom" style="border: 0.5px solid black; text-align: center; background: #f7f6d2; cursor: pointer;">
-                            <figure style="max-width: 100%; max-height: 100%; overflow: hidden;">
-                                <img src="img/dog-walk.jpg">
-                            </figure>
-                            <h3 style="background: #b5db0a; color: black; border-bottom: 0.5px solid black;" class="m-0 py-2 newsh3hover">The average dog owner walks their pet 1,000 miles in a year.</h3>
-                            <p style="color: black; text-align: justify;" class="px-2">Dog owners trek more than 1,000 miles, play 2,080 rounds of fetch – and call their pet’s name 3,120 times while walking them each year, a study has found.</p>
-                            <a href="single.html" class="readmore">Read more</a>
-                        </div>
-
-                        <!-- NEWS 3 -->
-                        <div class="col-11 mb-3 newshover photozoom" style="border: 0.5px solid black; text-align: center; background: #f7f6d2; cursor: pointer;">
-                            <figure style="max-width: 100%; max-height: 100%; overflow: hidden;">
-                                <img src="img/hero-dog.jpg">
-                            </figure>
-                            <h3 style="background: #b5db0a; color: black; border-bottom: 0.5px solid black;" class="m-0 py-2 newsh3hover">US Army dog that attacked machine-gun nest in Second World War awarded posthumous medal for bravery.</h3>
-                            <p style="color: black; text-align: justify;" class="px-2">A US Army dog that attacked a machine-gun nest during the Second World War has been posthumously awarded Britain's highest honour for animal bravery.Chips, a German shepherd-husky cross, was awarded the Dickin Medal for actions
-                                during a 1943 beach landing in Sicily.</p>
-                            <a href="single.html" class="readmore">Read more</a>
-                        </div>
+                    <!-- SCREEN -->
+                    <div class="col-6 screens">
 
                     </div>
+
                 </div>
+
             </div>
-        </div>
+        </section>
     </main>
-    <!---------- MAIN END ---------->
 
 
 
@@ -216,45 +154,6 @@
 
 
 
-    <!---------- FOOTER START ---------->
-    <footer>
-        <div class="row justify-content-between">
-            <div class="col-12 col-lg-4 ls">
-                <span style="color: black;" class="fab fa-phoenix-framework fa-2x"></span>
-                <a class="visitus" href="https://cubes.edu.rs/">Visit our course page</a>
-            </div>
-            <div class="col-12 col-lg-5 text-center">
-                <div class="row social justify-content-between no-gutters">
-                    <div class="col-2">
-                        <a href="#">
-                            <span class="fab fa-google-plus-g fa-lg"></span>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="#">
-                            <span class="fab fa-facebook-f fa-lg"></span>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="#">
-                            <span class="fab fa-twitter fa-lg"></span>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="#">
-                            <span class="fab fa-viber fa-lg"></span>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="#">
-                            <span class="fab fa-skype fa-lg"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!---------- FOOTER END ---------->
 
 
 
@@ -268,94 +167,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/jquery.validate.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        // FORM VALIDATION 
-        $(document).ready(function() {
-            $(function() {
-                $(".form-contact").validate({
-                    highlight: function(element) {
-                        $(element).closest('.form-group').addClass("has-danger");
-                        $(element).addClass("form-control-danger");
-                    },
-                    unhighlight: function(element) {
-                        $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
-                        $(element).removeClass('form-control-danger').addClass('form-control-success');
-                    },
-                    rules: {
-                        W_name: {
-                            required: true,
-                            rangelength: [3, 255]
-                        },
-                        W_email: {
-                            required: true,
-                            rangelength: [5, 255],
-                            email: true
-                        },
-                        W_message: {
-                            required: true,
-                            rangelength: [10, 255]
-                        }
-
-                    },
-                    messages: {
-                        W_name: {
-                            required: "The *Name field is required!",
-                            rangelength: "The *Name must be between 3 and 255 characters!"
-                        },
-                        W_email: {
-                            required: "The *Email field is required!",
-                            rangelength: "The *Email must be between 5 and 255 characters!",
-                            email: "Please enter a valid email addres!"
-                        },
-                        W_message: {
-                            required: "The *Message field is required!",
-                            rangelength: "The *Message must be between 10 and 255 characters!",
-                            email: "Please enter a valid message!"
-                        }
-                    },
-                    errorElement: 'p',
-                    errorPlacement: function(error, element) {
-                        error.appendTo($(element).closest('.form-group').find('.error'));
-                    }
-
-                });
-            });
-        });
-        //Form Validation
-    </script>
-    <script>
-        // SLIDE SHOW
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
-    </script>
 </body>
 
 </html>
