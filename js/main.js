@@ -4,12 +4,12 @@ $(document).ready(function() {
 
 
 
-    $('#gorightbtn').click(function() {
-        $('#main').addClass('moveright');
+    $('#gomusicbtn').click(function() {
+        $('#main').css('margin-left', " -100vw");
     });
 
-    $('#godownbtn').click(function() {
-        $('#main').addClass('movedown');
+    $('#goblogbtn').click(function() {
+        $('#main').css('margin-top', " -100vh");
     });
 
     $('#goleftbtn').click(function() {

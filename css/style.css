@@ -1,7 +1,61 @@
+body {
+    position: relative;
+}
+
 h1 {
     font-family: 'Raleway', sans-serif;
 }
 
-{
-    overflow-y: hidden;
+#main {
+    width: 300vw;
+    height: 300vh;
+    transition: 1s ease;
+}
+
+
+/* MENU */
+
+.menu h1 {
+    display: inline-block
+}
+
+#main .menu {
+    cursor: pointer;
+    height: 30vh;
+    line-height: 30vh;
+}
+
+#main .screens {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+/* REMOVE SCROLL */
+
+* {
+    overflow: hidden;
+}
+
+
+/* RETURN SCROLL TO TEXTS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    overflow: visible;
+}
+
+
+/* HOVER FOR MENU */
+
+.hvr-shutter-in-horizontal:before {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
 }

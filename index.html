@@ -39,41 +39,13 @@
               <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
             <![endif]-->
     <style>
-        div#main {
-            display: block;
-            width: 200vw;
-            height: 200vh;
-            transition: 1s ease;
-            overflow-y: hidden;
-        }
-        
-        #main .screens {
-            height: 100vh;
-            position: relative;
-        }
-        
-        body {
-            position: relative;
-        }
-        
-        .moveright {
-            margin-left: -100vw;
-        }
-        
-        .movedown {
-            margin-top: -100vh;
+        #main {
+            background: #fff2d3;
         }
         
         #main .menu {
             border: 5px solid white;
             color: white;
-            cursor: pointer;
-            height: 30vh;
-            line-height: 30vh;
-        }
-        
-        .menu h1 {
-            display: inline-block
         }
         /* HOVER */
         
@@ -83,33 +55,31 @@
         
         .hvr-shutter-in-horizontal:before {
             background: #fff2d3;
-            -webkit-transition-duration: .2s;
-            transition-duration: .2s;
         }
     </style>
 </head>
 
-<body style="overflow: hidden">
+<body style="overflow-x: hidden;">
 
 
 
     <!-- MAIN -->
-    <main style="overflow: hidden">
+    <main>
         <section>
             <!-- MAIN DIV (SCREEN) -->
-            <div id="main" style="background: #fff2d3; overflow: hidden">
+            <div id="main">
                 <div class="row no-gutters">
 
 
 
-                    <!-- SCREEN 1 -->
-                    <div class="col-6 screens">
+                    <!-- SCREEN MAIN -->
+                    <div class="col-4 screens">
                         <div class="row text-center m-auto Mmenu" style="width: 60%; padding-top: 20vh;">
                             <div class="col-5 menu hvr-shutter-in-horizontal" style="border-right: none; border-bottom: none;">
                                 <i class="fas fa-user" style="color: white; font-size: 34px;"></i>
                                 <h1>My profile</h1>
                             </div>
-                            <div id="godownbtn" class="col-5 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
+                            <div id="goblogbtn" class="col-5 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
                                 <i class="fas fa-th-large" style="color: white; font-size: 34px"></i>
                                 <h1>Check blog.</h1>
                             </div>
@@ -117,30 +87,45 @@
                                 <i class="far fa-clipboard" style="color: white; font-size: 34px"></i>
                                 <h1>Posts</h1>
                             </div>
-                            <div id="gorightbtn" class="col-5 menu hvr-shutter-in-horizontal">
+                            <div id="gomusicbtn" class="col-5 menu hvr-shutter-in-horizontal">
                                 <i class="fas fa-headphones" style="color: white; font-size: 34px"></i>
-                                <h1 class="pr-2">Music</h1>
+                                <h1 class="pr-2">Music &amp; Video</h1>
                             </div>
                         </div>
                     </div>
 
 
-                    <!-- SCREEN 2 -->
-                    <div class="col-6 screens">
-                        <h1>Music</h1>
+
+
+                    <!-- SCREEN MUSIC&VIDEO -->
+                    <div class="col-4 screens">
+                        <h1>Music and Video</h1>
                     </div>
 
 
-                    <div class="col-6 screens">
+
+
+                    <!-- SCREEN MUSIC OR VIDEO -->
+                    <div class="col-4 screens">
+                        Coming soon.
+                    </div>
+
+
+
+
+                    <!-- SCREEN BLOG -->
+                    <div class="col-4 screens">
                         <h1>Blog</h1>
                     </div>
 
 
 
-                    <!-- SCREEN -->
-                    <div class="col-6 screens">
 
+                    <!-- SCREEN SINGLE POST -->
+                    <div class="col-4 screens">
+                        <h1>Coming soon.</h1>
                     </div>
+
 
                 </div>
 
