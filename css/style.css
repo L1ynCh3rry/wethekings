@@ -16,6 +16,48 @@ img {
     width: 100%;
 }
 
+#top {
+    position: absolute;
+    top: -335px;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 90vw;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease;
+    max-height: 375px;
+}
+
+.themeform {
+    max-height: 290px;
+}
+
+#top .apply {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #111;
+    color: #fff;
+    transition: 0.1s ease;
+    margin: auto;
+}
+
+#top .apply:hover {
+    background: #fff;
+    color: #111;
+}
+
+#themebtn {
+    z-index: 12;
+}
+
+#themebtnclose {
+    opacity: 0;
+    z-index: 12;
+}
+
 
 /* MENU */
 

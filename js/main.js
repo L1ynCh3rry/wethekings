@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 
-    /* GO TO THE BLOG*/
+    /* GO TO THE BLOG */
     $('#goblogbtn').click(function() {
         $('#main').css('margin-top', " -100vh");
     });
@@ -22,14 +22,28 @@ $(document).ready(function() {
     });
 
 
-    /* CHECK YOU PROFILE*/
+    /* CHECK YOU PROFILE */
     $('#goprofilebtn').click(function() {
         $('#myprofile').css('opacity', "1");
-        $('#myprofile').css('z-index', "5");
+        $('#myprofile').css('z-index', "25");
     });
     $('#gobackprofile').click(function() {
         $('#myprofile').css('opacity', "0");
         $('#myprofile').css('z-index', "-1");
+    });
+
+
+    /* THEME BUTTON */
+    $('#themebtn').click(function() {
+        $('#top').css('top', "-5px");
+        $('#themebtn').css('opacity', "0");
+        $('#themebtnclose').css('opacity', "1");
+    });
+
+    $('#themebtnclose').click(function() {
+        $('#top').css('top', "-335px");
+        $('#themebtn').css('opacity', "1");
+        $('#themebtnclose').css('opacity', "0");
     });
 
 

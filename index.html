@@ -26,9 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&amp;subset=latin-ext" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- CSS -->
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <link href="css/hover-min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
@@ -136,12 +134,39 @@
                     <div class="col-4 screens">
 
 
-                        <div style="position: absolute; top: -5px; left: 50vw; color: #fff;transform: translateX(-50%);">
-                            <p style="margin-bottom: -15px;">THEMES</p>
-                            <form>
-                                <input type="radio">
+                        <div id="top">
+                            <h1 class="pb-3" style="margin-bottom: -15px;">THEMES</h1>
+                            <form method="POST">
+                                <div class="row themeform" style="overflow: auto;">
+                                    <div class="col-12 col-lg-6">
+                                        <label>Background</label><br>
+                                        <input type="radio" name="background" value="#ffffff"> White<br>
+                                        <input type="radio" name="background" value="#000000"> Black<br>
+                                        <input type="radio" name="background" value="#841212"> Red<br>
+                                        <input type="radio" name="background" value="#041d6b"> Blue<br>
+                                        <input type="radio" name="background" value="#fff832"> Yellow<br>
+                                        <input type="radio" name="background" value="#06ad38"> Green<br>
+                                        <input type="radio" name="background" value="#ad5c06"> Orange<br>
+                                        <input type="radio" name="background" value="#bc145d"> Rose<br>
+                                        <input type="radio" name="background" value="#b2b2b2"> Gray<br>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <label>Texts &amp; Borders</label><br>
+                                        <input type="radio" name="inside" value="#ffffff"> White<br>
+                                        <input type="radio" name="inside" value="#000000"> Black<br>
+                                        <input type="radio" name="inside" value="#841212"> Red<br>
+                                        <input type="radio" name="inside" value="#041d6b"> Blue<br>
+                                        <input type="radio" name="inside" value="#fff832"> Yellow<br>
+                                        <input type="radio" name="inside" value="#06ad38"> Green<br>
+                                        <input type="radio" name="inside" value="#ad5c06"> Orange<br>
+                                        <input type="radio" name="inside" value="#bc145d"> Rose<br>
+                                        <input type="radio" name="inside" value="#b2b2b2"> Gray<br>
+                                    </div>
+                                    <button type="submit" class="apply">APPLY</button>
+                                </div>
                             </form>
                             <i class="fas fa-angle-down fa-3x" id="themebtn" style="cursor: pointer;"></i>
+                            <i class="fas fa-angle-up fa-3x" id="themebtnclose" style="cursor: pointer;"></i>
                         </div>
 
 
