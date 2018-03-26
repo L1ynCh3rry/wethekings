@@ -114,10 +114,66 @@
             border-top: 3px solid #fff;
             border-bottom: 3px solid #fff;
         }
+        
+        .hvr-radial-out:before {
+            background: #fff;
+        }
+        
+        .gobackbtn:hover {
+            color: #001e4f;
+        }
     </style>
 </head>
 
 <body style="overflow-x: hidden;">
+
+
+
+
+
+
+    <div id="top" class="text-center">
+        <h1 class="pb-3 " style="margin-bottom: -15px;">THEMES</h1>
+        <form method="POST">
+            <div class="row themeform" style="overflow: auto;">
+                <div class="col-12 col-lg-6">
+                    <label>Background</label><br>
+                    <input type="radio" name="background" value="#ffffff"> White<br>
+                    <input type="radio" name="background" value="#000000"> Black<br>
+                    <input type="radio" name="background" value="#841212"> Red<br>
+                    <input type="radio" name="background" value="#041d6b"> Blue<br>
+                    <input type="radio" name="background" value="#fff832"> Yellow<br>
+                    <input type="radio" name="background" value="#06ad38"> Green<br>
+                    <input type="radio" name="background" value="#ad5c06"> Orange<br>
+                    <input type="radio" name="background" value="#bc145d"> Rose<br>
+                    <input type="radio" name="background" value="#b2b2b2"> Gray<br>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label>Texts &amp; Borders</label><br>
+                    <input type="radio" name="inside" value="#ffffff"> White<br>
+                    <input type="radio" name="inside" value="#000000"> Black<br>
+                    <input type="radio" name="inside" value="#841212"> Red<br>
+                    <input type="radio" name="inside" value="#041d6b"> Blue<br>
+                    <input type="radio" name="inside" value="#fff832"> Yellow<br>
+                    <input type="radio" name="inside" value="#06ad38"> Green<br>
+                    <input type="radio" name="inside" value="#ad5c06"> Orange<br>
+                    <input type="radio" name="inside" value="#bc145d"> Rose<br>
+                    <input type="radio" name="inside" value="#b2b2b2"> Gray<br>
+                </div>
+                <button type="submit" class="apply">APPLY</button>
+            </div>
+        </form>
+        <i class="fas fa-angle-down fa-3x" id="themebtn" style="cursor: pointer;"></i>
+        <!-- <i class="fas fa-angle-up fa-3x" id="themebtnclose" style="cursor: pointer;"></i> -->
+    </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -132,45 +188,7 @@
 
                     <!-- SCREEN MAIN -->
                     <div class="col-4 screens">
-
-
-                        <div id="top">
-                            <h1 class="pb-3" style="margin-bottom: -15px;">THEMES</h1>
-                            <form method="POST">
-                                <div class="row themeform" style="overflow: auto;">
-                                    <div class="col-12 col-lg-6">
-                                        <label>Background</label><br>
-                                        <input type="radio" name="background" value="#ffffff"> White<br>
-                                        <input type="radio" name="background" value="#000000"> Black<br>
-                                        <input type="radio" name="background" value="#841212"> Red<br>
-                                        <input type="radio" name="background" value="#041d6b"> Blue<br>
-                                        <input type="radio" name="background" value="#fff832"> Yellow<br>
-                                        <input type="radio" name="background" value="#06ad38"> Green<br>
-                                        <input type="radio" name="background" value="#ad5c06"> Orange<br>
-                                        <input type="radio" name="background" value="#bc145d"> Rose<br>
-                                        <input type="radio" name="background" value="#b2b2b2"> Gray<br>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <label>Texts &amp; Borders</label><br>
-                                        <input type="radio" name="inside" value="#ffffff"> White<br>
-                                        <input type="radio" name="inside" value="#000000"> Black<br>
-                                        <input type="radio" name="inside" value="#841212"> Red<br>
-                                        <input type="radio" name="inside" value="#041d6b"> Blue<br>
-                                        <input type="radio" name="inside" value="#fff832"> Yellow<br>
-                                        <input type="radio" name="inside" value="#06ad38"> Green<br>
-                                        <input type="radio" name="inside" value="#ad5c06"> Orange<br>
-                                        <input type="radio" name="inside" value="#bc145d"> Rose<br>
-                                        <input type="radio" name="inside" value="#b2b2b2"> Gray<br>
-                                    </div>
-                                    <button type="submit" class="apply">APPLY</button>
-                                </div>
-                            </form>
-                            <i class="fas fa-angle-down fa-3x" id="themebtn" style="cursor: pointer;"></i>
-                            <i class="fas fa-angle-up fa-3x" id="themebtnclose" style="cursor: pointer;"></i>
-                        </div>
-
-
-                        <div class="row text-center m-auto" style="width: 50%; padding-top: 20vh;">
+                        <div class="row text-center m-auto mainmenu">
                             <div id="goprofilebtn" class="col-6 menu hvr-shutter-in-horizontal" style="border-right: none; border-bottom: none;">
                                 <i class="fas fa-user" style="font-size: 34px;"></i>
                                 <h1>My profile</h1>
@@ -196,18 +214,18 @@
                     <!-- SCREEN CHOOSE MUSIC&VIDEO -->
                     <div class="col-4 screens">
                         <h1 class="h1">Music and Video</h1>
-                        <div class="gobackbtn" id="gobackmusic">
+                        <div class="gobackbtn hvr-radial-out" id="gobackmusic">
                             <i class="fas fa-angle-left"></i>
                         </div>
-                        <div class="row text-center m-auto" style="width: 100%; padding-top: 20vh;">
+                        <div class="row text-center m-auto mainmenu">
                             <div class="col-12">
-                                <div id="gosinglemusicbtn" class="col-5 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
+                                <div id="gosinglemusicbtn" class="menu hvr-shutter-in-horizontal" style="border-bottom: none;">
                                     <i class="fas fa-headphones" style="font-size: 34px;"></i>
                                     <h1>Music</h1>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div id="gosinglevideobtn" class="col-5 menu hvr-shutter-in-horizontal">
+                                <div id="gosinglevideobtn" class="menu hvr-shutter-in-horizontal">
                                     <i class="fas fa-video" style="font-size: 34px;"></i>
                                     <h1>Video</h1>
                                 </div>
@@ -226,10 +244,10 @@
 
                         <div id="singlemusic">
                             <!-- BUTTONS -->
-                            <div class="gobackbtn" id="gobacksinglemusic" style="left: 100px">
+                            <div class="gobackbtn hvr-radial-out" id="gobacksinglemusic">
                                 <i class="fas fa-angle-left"></i>
                             </div>
-                            <div class="gobackbtn" id="gohomemusic" style="padding: 10px 15px;">
+                            <div class="gobackbtn hvr-radial-out" id="gohomemusic">
                                 <i class="fas fa-home"></i>
                             </div>
                             <!-- BUTTONS END -->
@@ -243,8 +261,8 @@
 
                                 <div class="col-12 songs hvr-bounce-to-right">
                                     <div class="row no-gutters">
-                                        <div class="col-10 col-lg-2 text-center">
-                                            <i class="fas fa-headphones fa-3x"></i>
+                                        <div class="col-12 col-lg-2 text-center">
+                                            <i class="fas fa-headphones fa-3x m-auto"></i>
                                         </div>
                                         <div class="col-12 col-lg-10 py-1">
                                             <h2>Song name</h2>
@@ -265,10 +283,10 @@
                         </div>
                         <div id="singlevideo">
                             <!-- BUTTONS -->
-                            <div class="gobackbtn" id="gobacksinglevideo" style="left: 100px">
+                            <div class="gobackbtn hvr-radial-out" id="gobacksinglevideo">
                                 <i class="fas fa-angle-left"></i>
                             </div>
-                            <div class="gobackbtn" id="gohomevideo" style="padding: 10px 15px;">
+                            <div class="gobackbtn hvr-radial-out" id="gohomevideo">
                                 <i class="fas fa-home"></i>
                             </div>
                             <!-- BUTTONS ENDS -->
@@ -314,7 +332,7 @@
                     <!-- SCREEN BLOG -->
                     <div class="col-4 screens">
                         <!-- GO BACK BUTTON -->
-                        <div class="gobackbtn" id="gobackblog">
+                        <div class="gobackbtn hvr-radial-out" id="gobackblog">
                             <i class="fas fa-angle-up"></i>
                         </div>
                         <h1 class="h1">Blog</h1>
@@ -355,7 +373,7 @@
     </main>
 
     <div class="" id="myprofile">
-        <div class="gobackbtn" id="gobackprofile" style="right: 5px; left: auto;">
+        <div class="gobackbtn hvr-radial-out" id="gobackprofile" style="right: 5px; float: right;">
             <i class="fas fa-times"></i>
         </div>
 

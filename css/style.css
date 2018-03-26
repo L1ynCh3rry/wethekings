@@ -31,6 +31,10 @@ img {
     max-height: 375px;
 }
 
+.themeactive {
+    top: -5px!important;
+}
+
 .themeform {
     max-height: 290px;
 }
@@ -51,6 +55,7 @@ img {
 
 #themebtn {
     z-index: 12;
+    transition: 0.5s ease;
 }
 
 #themebtnclose {
@@ -58,11 +63,20 @@ img {
     z-index: 12;
 }
 
+.mainmenu {
+    width: 90%;
+    padding-top: 20vh;
+}
+
 
 /* MENU */
 
+.screens h1 {
+    display: inline-block;
+}
+
 .menu h1 {
-    display: inline-block
+    display: inline-block;
 }
 
 #main .menu {
@@ -79,11 +93,12 @@ img {
 }
 
 .gobackbtn {
-    position: absolute;
-    top: 5px;
-    left: 5px;
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
     padding: 10px 20px;
-    border-radius: 50%;
+    border-radius: 1%;
     cursor: pointer;
 }
 

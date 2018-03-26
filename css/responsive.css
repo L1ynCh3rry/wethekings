@@ -1,6 +1,10 @@
 @media(min-width:320px) {}
 
-@media(min-width:576px) {}
+@media(min-width:576px) {
+    .mainmenu {
+        width: 70%;
+    }
+}
 
 @media(min-width:768px) {
     #singlemusic .fa-headphones.fa-3x {
@@ -10,4 +14,8 @@
 
 @media(min-width:992px) {}
 
-@media(min-width:1200px) {}
+@media(min-width:1200px) {
+    .mainmenu {
+        width: 60%;
+    }
+}

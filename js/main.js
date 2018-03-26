@@ -33,19 +33,11 @@ $(document).ready(function() {
     });
 
 
+
     /* THEME BUTTON */
     $('#themebtn').click(function() {
-        $('#top').css('top', "-5px");
-        $('#themebtn').css('opacity', "0");
-        $('#themebtnclose').css('opacity', "1");
+        $("#top").toggleClass("themeactive");
     });
-
-    $('#themebtnclose').click(function() {
-        $('#top').css('top', "-335px");
-        $('#themebtn').css('opacity', "1");
-        $('#themebtnclose').css('opacity', "0");
-    });
-
 
 
     /******************CHOOSE MUSIC OR VIDEO**********************/
