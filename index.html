@@ -122,6 +122,11 @@
         .gobackbtn:hover {
             color: #001e4f;
         }
+        
+        #blog {
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+        }
     </style>
 </head>
 
@@ -193,18 +198,19 @@
                                 <i class="fas fa-user" style="font-size: 34px;"></i>
                                 <h1>My profile</h1>
                             </div>
-                            <div id="goblogbtn" class="col-6 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
-                                <i class="fas fa-th-large" style="font-size: 34px"></i>
-                                <h1>Check blog.</h1>
-                            </div>
-                            <div class="col-6 menu hvr-shutter-in-horizontal" style=" border-right: none;">
-                                <i class="far fa-clipboard" style="font-size: 34px"></i>
-                                <h1>Posts(Coming soon).</h1>
-                            </div>
-                            <div id="gomusicbtn" class="col-6 menu hvr-shutter-in-horizontal">
+                            <div id="gomusicbtn" class="col-6 menu hvr-shutter-in-horizontal" style="border-bottom: none;">
                                 <i class="fas fa-headphones" style="font-size: 34px"></i>
                                 <h1 class="pr-2">Music &amp; Video</h1>
                             </div>
+                            <div id="goblogbtn" class="col-6 menu hvr-shutter-in-horizontal" style=" border-right: none;">
+                                <i class="fas fa-th-large" style="font-size: 34px"></i>
+                                <h1>Posts</h1>
+                            </div>
+                            <div class="col-6 menu hvr-shutter-in-horizontal">
+                                <i class="far fa-clipboard" style="font-size: 34px"></i>
+                                <h1>More coming soon.</h1>
+                            </div>
+
                         </div>
                     </div>
 
@@ -337,10 +343,10 @@
                         </div>
                         <h1 class="h1">Blog</h1>
 
-                        <div class="row m-auto p-3" style="width: 90vw; max-height: 90vh; overflow-y: auto;">
+                        <div class="row m-auto p-3" id="blog">
 
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0" style="border: 1px solid #fff;box-shadow: 0 0 10px #fff;">
+                            <div class="col-12 px-0" style="border: 1px solid #fff;">
                                 <div class="row no-gutters post">
                                     <div class="col-12">
                                         <figure class="m-0" style="overflow: hidden;">

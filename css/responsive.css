@@ -12,10 +12,21 @@
     }
 }
 
-@media(min-width:992px) {}
+@media(min-width:992px) {
+    .registerdiv {
+        width: 65vw;
+        min-height: 30vh;
+        margin-top: 15vh;
+    }
+}
 
 @media(min-width:1200px) {
     .mainmenu {
         width: 60%;
+    }
+    .registerdiv {
+        width: 45vw;
+        min-height: 30vh;
+        margin-top: 20vh;
     }
 }

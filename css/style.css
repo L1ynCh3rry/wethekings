@@ -97,6 +97,12 @@ img {
     text-align: center;
 }
 
+#blog {
+    width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
 .gobackbtn {
     float: left;
     display: inline-block;
@@ -161,4 +167,18 @@ p {
 .hvr-shutter-in-horizontal:before {
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
+}
+
+
+/* REGISTER */
+
+form input {
+    width: 90%!important;
+    margin: auto;
+}
+
+.registerdiv {
+    width: 95vw;
+    min-height: 30vh;
+    margin-top: 5vh;
 }
